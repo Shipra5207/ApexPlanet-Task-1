@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Contact Form & To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Interactive Website</h1>
+        <p>Contact Form and Dynamic To-Do List</p>
+    </header>
+     
+<nav class="navbar">
+    <div class="logo">My Website</div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#todo">To-Do List</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section class="card" id="contact">
+            <h2>Contact Form</h2>
+
+            <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message"></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+
+        <section class="card" id="todo">
+            <h2>My To-Do List</h2>
+
+            <div class="todo-input">
+                <input type="text" id="todoInput" placeholder="Enter a task">
+                <button id="addBtn" type="button">Add Task</button>
+            </div>
+
+            <ul id="todoList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 My Interactive Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
